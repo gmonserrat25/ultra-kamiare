@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultra Kâmiâre Trail · San Esteban, Punilla</title>
+  <meta name="description" content="Carrera de trail running en San Esteban, Valle de Punilla, Córdoba. 50K, 30K y 15K por el otro costado de las sierras. Carrera ITRA con puntos UTMB Index.">
+  <meta property="og:title" content="Ultra Kâmiâre Trail">
+  <meta property="og:description" content="50K · 30K · 15K desde San Esteban, Punilla. Volvé al origen.">
+  <meta property="og:image" content="img/cumbre-banderas.jpg">
+  <link rel="icon" href="img/logo-simbolo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Filtro que le da a los títulos el borde gastado de las placas de la marca -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="gastado" x="-2%" y="-10%" width="104%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="ruido"/>
+      <feDisplacementMap in="SourceGraphic" in2="ruido" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="envoltura cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="Ultra Kâmiâre Trail, inicio">
+        <img src="img/logo-naranja.png" alt="Ultra Kâmiâre Trail" width="220" height="76">
+      </a>
+      <div class="cabecera__redes">
+        <a href="https://www.instagram.com/ultra_kamiare/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5493548615359" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--primario btn--chico" href="#inscripcion">Inscripción</a>
+      </div>
+    </div>
+    <nav class="franja" aria-label="Secciones">
+      <div class="envoltura franja__fila">
+        <button class="franja__menu" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+        <ul id="menu" class="franja__lista">
+          <li><a href="#carrera">La carrera</a></li>
+          <li><a href="#distancias">Distancias</a></li>
+          <li><a href="#reglamento">Requisitos</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#lugar">El lugar</a></li>
+          <li><a href="#galeria">Fotos</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+        <p class="franja__fecha">2ª edición · 2027</p>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section id="inicio" class="portada">
+      <img class="portada__foto" src="img/cumbre-banderas.jpg" alt="Corredor bajando entre rocas y banderas de colores en lo alto del circuito" fetchpriority="high">
+      <div class="envoltura portada__texto">
+        <p class="rotulo rotulo--claro">Origen en <em>movimiento</em></p>
+        <h1 class="titulo-gastado">Volvé<br>al origen</h1>
+        <p class="portada__bajada">Trail running por el otro costado de las sierras de Punilla. Tres distancias que salen del balneario de San Esteban y suben hasta Las Pampillas, con Las Gemelas y el Uritorco de fondo.</p>
+        <div class="portada__acciones">
+          <a class="btn btn--primario" href="#distancias">Ver las distancias</a>
+          <a class="enlace enlace--claro" href="#resultados">Resultados 2026</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARRA DE DATOS (en Corredo: cuenta regresiva + newsletter) -->
+    <section class="barra" aria-label="Próxima edición">
+      <div class="envoltura barra__fila">
+        <div class="barra__fecha">
+          <span class="barra__grande">Mayo 2027</span>
+          <span class="barra__chica">Fecha exacta a confirmar</span>
+        </div>
+        <dl class="barra__datos">
+          <div><dt>50</dt><dd>km</dd></div>
+          <div><dt>30</dt><dd>km</dd></div>
+          <div><dt>15</dt><dd>km</dd></div>
+          <div><dt>1.529</dt><dd>m D+ máx.</dd></div>
+        </dl>
+        <div class="barra__aviso">
+          <p>¿Querés enterarte cuando abran las inscripciones?</p>
+          <a class="btn btn--linea-clara" href="https://wa.me/5493548615359?text=Hola!%20Quiero%20que%20me%20avisen%20cuando%20abran%20las%20inscripciones%20de%20Ultra%20K%C3%A2mi%C3%A2re%202027" target="_blank" rel="noopener">Avisame por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRES TARJETAS -->
+    <section class="tarjetas" aria-label="Accesos rápidos">
+      <div class="envoltura tarjetas__grilla">
+        <a class="tarjeta" href="#distancias">
+          <img src="img/corredor-cresta-sm.jpg" alt="" loading="lazy">
+          <span class="tarjeta__titulo">Distancias<br>y altimetría</span>
+          <span class="tarjeta__mas">Ver detalle</span>
+        </a>
+        <a class="tarjeta" href="#lugar">
+          <img src="img/valle-punilla-sm.jpg" alt="" loading="lazy">
+          <span class="tarjeta__titulo">San Esteban<br>y el recorrido</span>
+          <span class="tarjeta__mas">Cómo llegar</span>
+        </a>
+        <a class="tarjeta" href="#reglamento">
+          <img src="img/sendero-piedras-sm.jpg" alt="" loading="lazy">
+          <span class="tarjeta__titulo">Qué llevar<br>el día de la carrera</span>
+          <span class="tarjeta__mas">Requisitos</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BIENVENIDA + CIFRAS -->
+    <section id="carrera" class="seccion">
+      <div class="envoltura bienvenida">
+        <div class="bienvenida__cuerpo">
+          <p class="rotulo">La carrera</p>
+          <h2 class="titulo-seccion titulo-gastado">Una carrera que vuelve adonde todo empezó</h2>
+          <div class="bienvenida__texto">
+            <figure class="bienvenida__foto">
+              <img src="img/corredora-pastizal-sm.jpg" alt="Corredora en el pastizal de altura" loading="lazy">
+            </figure>
+            <div>
+              <p>Ultra Kâmiâre Trail nació en 2026 con una idea simple: correr por los senderos del valle de Punilla que casi nadie pisa. Pueblos históricos, bosquecitos junto al río Dolores, el Corral de Piedra, la Cabeza del Soldado y la pampa de altura de Las Pampillas, a casi 1.800 metros.</p>
+              <p><strong>Kâmiâre</strong> es el nombre con el que se llamaban a sí mismos los pueblos que habitaron estas sierras, a quienes los españoles llamaron comechingones. La carrera les rinde homenaje en su propio territorio: por eso el lema es <em>origen en movimiento</em> y por eso a quienes corren les decimos la tribu.</p>
+              <p>La primera edición se corrió el 24 de mayo de 2026 con más de 160 corredores en las tres distancias, y ya sumaba puntos ITRA y clasificación UTMB Index desde su debut.</p>
+              <a class="enlace" href="#resultados">Ver cómo terminó la primera edición</a>
+            </div>
+          </div>
+        </div>
+        <aside class="cifras" aria-label="La primera edición en números">
+          <div class="cifra"><span class="cifra__num">168</span><span class="cifra__txt">corredores en la clasificación 2026</span></div>
+          <div class="cifra"><span class="cifra__num">1.779</span><span class="cifra__txt">metros, el punto más alto (30K)</span></div>
+          <div class="cifra"><span class="cifra__num">6</span><span class="cifra__txt">puestos de hidratación en el 50K</span></div>
+          <div class="cifra cifra--sello"><span class="cifra__num">ITRA</span><span class="cifra__txt">y UTMB Index</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- DISTANCIAS -->
+    <section id="distancias" class="seccion seccion--hueso">
+      <div class="envoltura">
+        <p class="rotulo">Circuitos</p>
+        <h2 class="titulo-seccion titulo-gastado">Tres distancias, una misma tribu</h2>
+        <p class="introduccion">Las tres largan y llegan en el balneario de San Esteban. Los datos son los del circuito 2026; la organización confirma cualquier cambio de trazado antes de abrir las inscripciones de 2027.</p>
+
+        <div class="pestanias" role="tablist" aria-label="Elegí una distancia">
+          <button role="tab" id="p-50" aria-controls="d-50" aria-selected="true">50K</button>
+          <button role="tab" id="p-30" aria-controls="d-30" aria-selected="false" tabindex="-1">30K</button>
+          <button role="tab" id="p-15" aria-controls="d-15" aria-selected="false" tabindex="-1">15K</button>
+        </div>
+
+        <article id="d-50" class="distancia" role="tabpanel" aria-labelledby="p-50">
+          <div class="distancia__cabeza">
+            <h3 class="distancia__nombre">50K <span>Ultra</span></h3>
+            <dl class="distancia__datos">
+              <div><dt>Distancia</dt><dd>47,2 km</dd></div>
+              <div><dt>Desnivel positivo</dt><dd>1.529 m</dd></div>
+              <div><dt>Altura máxima</dt><dd>1.745 m</dd></div>
+            </dl>
+          </div>
+          <figure class="perfil" data-perfil="50" data-km="47.2" data-pa="9,16,22,28,37,42">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Perfil de altimetría del 50K"></svg>
+            <figcaption>Perfil aproximado, redibujado de la altimetría oficial. Las marcas son los puestos de hidratación.</figcaption>
+          </figure>
+          <div class="distancia__detalle">
+            <div>
+              <h4>Puestos de hidratación</h4>
+              <ol class="lista-pa">
+                <li><span>km 9</span> Los Pencales</li>
+                <li><span>km 16</span> Río Dolores</li>
+                <li><span>km 22</span> Corral de Piedra</li>
+                <li><span>km 28</span> Las Pampillas</li>
+                <li><span>km 37</span> Las Pampillas</li>
+                <li><span>km 42</span> Pie de la Cabeza del Soldado</li>
+              </ol>
+            </div>
+            <div>
+              <h4>Puntos clave</h4>
+              <p>Balneario, río Dolores y sus bosquecitos, Corral de Piedra, Cabeza del Soldado y Las Pampillas. Es la única distancia que pasa dos veces por la pampa de altura: los primeros 20 km son de valle y a partir de ahí se sube de golpe.</p>
+            </div>
+            <div>
+              <h4>Equipo obligatorio</h4>
+              <ul class="lista-simple">
+                <li>Remera del evento</li>
+                <li>Dorsal visible</li>
+                <li>Remera térmica</li>
+                <li>Manta térmica</li>
+                <li>Mochila o chaleco de hidratación</li>
+                <li>Botiquín</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="d-30" class="distancia" role="tabpanel" aria-labelledby="p-30" hidden>
+          <div class="distancia__cabeza">
+            <h3 class="distancia__nombre">30K <span>Trail</span></h3>
+            <dl class="distancia__datos">
+              <div><dt>Distancia</dt><dd>29 km</dd></div>
+              <div><dt>Desnivel positivo</dt><dd>981 m</dd></div>
+              <div><dt>Altura máxima</dt><dd>1.779 m</dd></div>
+            </dl>
+          </div>
+          <figure class="perfil" data-perfil="30" data-km="28.96" data-pa="11,15,20">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Perfil de altimetría del 30K"></svg>
+            <figcaption>Perfil aproximado, redibujado de la altimetría oficial. Las marcas son los puestos de hidratación.</figcaption>
+          </figure>
+          <div class="distancia__detalle">
+            <div>
+              <h4>Puestos de hidratación</h4>
+              <ol class="lista-pa">
+                <li><span>km 11</span> Corral de Piedra</li>
+                <li><span>km 15</span> Las Pampillas</li>
+                <li><span>km 20</span> Pie de la Cabeza del Soldado</li>
+              </ol>
+            </div>
+            <div>
+              <h4>Puntos clave</h4>
+              <p>Balneario, río Dolores y sus bosquecitos, Corral de Piedra, Cabeza del Soldado y Las Pampillas. Tiene el punto más alto de toda la carrera y una trepada larga entre los km 7 y 11; después son casi 10 km de altura antes de la bajada final.</p>
+              <p>El sendero de la Cabeza del Soldado es exclusivo de 30K y 50K: uno de los tramos más imponentes del circuito, con panorámicas del valle que no se ven desde ningún otro lado.</p>
+            </div>
+            <div>
+              <h4>Equipo obligatorio</h4>
+              <ul class="lista-simple">
+                <li>Remera del evento</li>
+                <li>Dorsal visible</li>
+                <li>Remera térmica</li>
+                <li>Manta térmica</li>
+                <li>Mochila o chaleco de hidratación</li>
+                <li>Botiquín</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="d-15" class="distancia" role="tabpanel" aria-labelledby="p-15" hidden>
+          <div class="distancia__cabeza">
+            <h3 class="distancia__nombre">15K <span>Trail</span></h3>
+            <dl class="distancia__datos">
+              <div><dt>Distancia</dt><dd>15,8 km</dd></div>
+              <div><dt>Desnivel positivo</dt><dd>328 m</dd></div>
+              <div><dt>Altura máxima</dt><dd>1.187 m</dd></div>
+            </dl>
+          </div>
+          <figure class="perfil" data-perfil="15" data-km="15.83" data-pa="5,12">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Perfil de altimetría del 15K"></svg>
+            <figcaption>Perfil aproximado, redibujado de la altimetría oficial. Las marcas son los puestos de hidratación.</figcaption>
+          </figure>
+          <div class="distancia__detalle">
+            <div>
+              <h4>Puestos de hidratación</h4>
+              <ol class="lista-pa">
+                <li><span>km 5</span> Los Pencales</li>
+                <li><span>km 12</span> Río Dolores</li>
+              </ol>
+            </div>
+            <div>
+              <h4>Puntos clave</h4>
+              <p>Una subida sostenida hasta el cerro Los Pencales en la primera mitad y una vuelta rápida por el río Dolores. Es la distancia ideal para debutar en trail: en 2026 muchos de los que la corrieron se estaban iniciando.</p>
+            </div>
+            <div>
+              <h4>Equipo obligatorio</h4>
+              <ul class="lista-simple">
+                <li>Remera del evento</li>
+                <li>Dorsal visible</li>
+              </ul>
+              <h4 class="h4-espacio">Recomendado</h4>
+              <ul class="lista-simple">
+                <li>Rompeviento</li>
+                <li>Calzas o pantalón</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BANNER (en Corredo: "we are looking for volunteers") -->
+    <section class="banner">
+      <img class="banner__foto" src="img/caballos.jpg" alt="Caballos sueltos en la ladera mientras pasa un corredor" loading="lazy">
+      <div class="envoltura banner__texto">
+        <h2 class="titulo-gastado">Corré con Las Gemelas<br>y el Uritorco de testigos</h2>
+        <p>En la pampa de altura te cruzás con caballos sueltos, pastizales y un silencio que no se escucha en ninguna otra carrera del valle.</p>
+        <a class="btn btn--primario" href="#lugar">Conocé el recorrido</a>
+      </div>
+    </section>
+
+
+    <!-- REQUISITOS + KIT + INSCRIPCION -->
+    <section id="reglamento" class="seccion seccion--oscura">
+      <div class="envoltura">
+        <p class="rotulo rotulo--claro">Antes de largar</p>
+        <h2 class="titulo-seccion titulo-seccion--claro titulo-gastado">Requisitos y kit</h2>
+        <div class="columnas-3">
+          <div class="bloque">
+            <h3>Para acreditarte</h3>
+            <ul class="lista-simple lista-simple--clara">
+              <li>Deslinde de responsabilidad firmado por el corredor</li>
+              <li>Apto médico</li>
+              <li>Si retira otra persona por vos, coordinalo antes al 3548 615359</li>
+            </ul>
+            <p>La acreditación y la entrega de kits se hacen en el balneario, el día anterior a la carrera.</p>
+          </div>
+          <div class="bloque">
+            <h3>Qué trae el kit</h3>
+            <ul class="lista-simple lista-simple--clara">
+              <li>Remera técnica oficial, hecha con Salpa Sports</li>
+              <li>Número de corredor</li>
+              <li>Medalla finisher al cruzar la meta</li>
+            </ul>
+            <p>La remera es obligatoria en carrera: se corre con la del evento en las tres distancias.</p>
+          </div>
+          <div class="bloque">
+            <h3>En los puestos</h3>
+            <p>Los vasos de los puestos de hidratación son para recargar o para tomar ahí mismo. <strong>No son descartables</strong>: llevá tu vaso o tu flask y no dejes nada en el cerro.</p>
+            <p>Entre puesto y puesto el recorrido es de montaña y no hay asistencia; en 30K y 50K el chaleco de hidratación es obligatorio por eso.</p>
+          </div>
+        </div>
+
+        <div id="inscripcion" class="inscripcion">
+          <div class="inscripcion__texto">
+            <h3 class="titulo-gastado">Inscripción 2027</h3>
+            <p>Todavía no abrió. Cuando se habilite la vas a encontrar acá y en nuestro Instagram. Si corrés con tu running team, escribinos por WhatsApp: hay beneficios para grupos.</p>
+            <a class="btn btn--primario" href="https://wa.me/5493548615359?text=Hola!%20Quiero%20info%20sobre%20la%20inscripci%C3%B3n%20a%20Ultra%20K%C3%A2mi%C3%A2re%202027" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section id="resultados" class="seccion">
+      <div class="envoltura">
+        <div class="cabeza-doble">
+          <div>
+            <p class="rotulo">1ª edición · 24 de mayo de 2026</p>
+            <h2 class="titulo-seccion titulo-gastado">Así terminó la primera</h2>
+          </div>
+          <a class="btn btn--linea" href="https://cronometrajeinstantaneo.com/resultados/ultra-kamiare-trail/" target="_blank" rel="noopener">Buscá tu tiempo por dorsal</a>
+        </div>
+
+        <div class="podios">
+          <article class="podio">
+            <h3 class="podio__dist">50K <span>24 en la clasificación</span></h3>
+            <div class="podio__cols">
+              <div>
+                <h4>Mujeres</h4>
+                <ol>
+                  <li><span class="n">María Laura Nahal</span><span class="t">5:59:38</span></li>
+                  <li><span class="n">María Luz Gómez</span><span class="t">6:13:56</span></li>
+                  <li><span class="n">María Florencia Reynoso Vico</span><span class="t">6:16:53</span></li>
+                </ol>
+              </div>
+              <div>
+                <h4>Hombres</h4>
+                <ol>
+                  <li><span class="n">Julio Molina</span><span class="t">4:07:49</span></li>
+                  <li><span class="n">Lucio Galván</span><span class="t">4:27:40</span></li>
+                  <li><span class="n">Maxi Barreira</span><span class="t">4:59:49</span></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+          <article class="podio">
+            <h3 class="podio__dist">30K <span>53 en la clasificación</span></h3>
+            <div class="podio__cols">
+              <div>
+                <h4>Mujeres</h4>
+                <ol>
+                  <li><span class="n">Agustina Balbuena</span><span class="t">2:42:59</span></li>
+                  <li><span class="n">Sofía Cisneros</span><span class="t">3:03:40</span></li>
+                  <li><span class="n">Erica Báez</span><span class="t">3:23:33</span></li>
+                </ol>
+              </div>
+              <div>
+                <h4>Hombres</h4>
+                <ol>
+                  <li><span class="n">Gabriel Alejandro Barrera</span><span class="t">2:16:47</span></li>
+                  <li><span class="n">Miguel Garnica</span><span class="t">2:19:17</span></li>
+                  <li><span class="n">Máximo Mercader</span><span class="t">2:22:31</span></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+          <article class="podio">
+            <h3 class="podio__dist">15K <span>91 en la clasificación</span></h3>
+            <div class="podio__cols">
+              <div>
+                <h4>Mujeres</h4>
+                <ol>
+                  <li><span class="n">Florencia Barrera</span><span class="t">1:09:50</span></li>
+                  <li><span class="n">Candela Navarro</span><span class="t">1:12:30</span></li>
+                  <li><span class="n">Sol Natalia Loza Ochoa</span><span class="t">1:14:05</span></li>
+                </ol>
+              </div>
+              <div>
+                <h4>Hombres</h4>
+                <ol>
+                  <li><span class="n">Federico Benito</span><span class="t">0:54:43</span></li>
+                  <li><span class="n">Kevin Catalano</span><span class="t">1:00:32</span></li>
+                  <li><span class="n">Emiliano Ruiz</span><span class="t">1:01:25</span></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="nota">Tiempos oficiales de Cronometraje Instantáneo. La clasificación completa, por categoría y con parciales, está en su sitio.</p>
+      </div>
+    </section>
+
+    <!-- EL LUGAR + MAPA -->
+    <section id="lugar" class="seccion seccion--hueso">
+      <div class="envoltura lugar">
+        <div class="lugar__texto">
+          <p class="rotulo">El recorrido</p>
+          <h2 class="titulo-seccion titulo-gastado">El otro costado de Punilla</h2>
+          <p>San Esteban es un pueblo chico del norte del valle, entre Los Cocos y Capilla del Monte, con una estación de tren de piedra y un balneario sobre el río Dolores. De ahí sale la carrera, cruza hacia Los Cocos y sube a la pampa de altura por sectores que no se usan en otras competencias.</p>
+          <dl class="puntos">
+            <div><dt>Balneario San Esteban</dt><dd>Largada, llegada, acreditación y feria.</dd></div>
+            <div><dt>Río Dolores</dt><dd>Bosquecitos de ribera y el primer cruce de agua.</dd></div>
+            <div><dt>Cerro Los Pencales</dt><dd>La subida del 15K y primer puesto del 50K.</dd></div>
+            <div><dt>Corral de Piedra</dt><dd>Donde empieza de verdad la montaña para 30K y 50K.</dd></div>
+            <div><dt>Mástil de Los Cocos</dt><dd>Mirador sobre todo el valle.</dd></div>
+            <div><dt>Cabeza del Soldado</dt><dd>El sendero más imponente del circuito.</dd></div>
+            <div><dt>Las Pampillas</dt><dd>Pampa de altura, cerca de los 1.800 m.</dd></div>
+          </dl>
+          <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&query=Balneario+San+Esteban+C%C3%B3rdoba" target="_blank" rel="noopener">Cómo llegar al balneario</a>
+        </div>
+        <figure class="lugar__mapa">
+          <iframe title="Mapa de San Esteban, Punilla" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-64.62%2C-30.99%2C-64.44%2C-30.84&amp;layer=mapnik&amp;marker=-30.9226%2C-64.5380"></iframe>
+          <figcaption>San Esteban, Valle de Punilla, Córdoba. A unos 100 km de la ciudad de Córdoba por la ruta 38.</figcaption>
+        </figure>
+      </div>
+      <img class="panoramica" src="img/pampillas-panorama.jpg" alt="Panorámica de la pampa de altura de Las Pampillas" loading="lazy">
+    </section>
+
+    <!-- PREGUNTAS (fondo oscuro, como en Corredo) -->
+    <section id="preguntas" class="seccion seccion--oscura">
+      <div class="envoltura">
+        <p class="rotulo rotulo--claro">Dudas frecuentes</p>
+        <h2 class="titulo-seccion titulo-seccion--claro titulo-gastado">Preguntas</h2>
+        <div class="preguntas">
+          <details>
+            <summary>¿Nunca corrí trail, puedo anotarme?</summary>
+            <p>Sí. El 15K tiene 328 m de desnivel y es la distancia pensada para debutar. El 30K y el 50K piden experiencia previa en montaña y el equipo obligatorio completo.</p>
+          </details>
+          <details>
+            <summary>¿Qué significa que sea carrera ITRA y UTMB Index?</summary>
+            <p>Terminar Ultra Kâmiâre suma puntos ITRA y aporta a tu UTMB Index, el sistema de clasificación internacional del Grupo UTMB. El índice permite comparar rendimientos entre carreras de todo el mundo y es requisito para inscribirse a las finales de las UTMB World Series.</p>
+          </details>
+          <details>
+            <summary>¿Hay descuento para running teams?</summary>
+            <p>Sí, hay beneficios para grupos en todas las distancias. El código se gestiona escribiendo al WhatsApp de la organización.</p>
+          </details>
+          <details>
+            <summary>¿Puede retirar el kit otra persona?</summary>
+            <p>Sí, pero hay que coordinarlo antes al 3548 615359. La persona tiene que llevar el deslinde firmado por el corredor y su apto médico.</p>
+          </details>
+          <details>
+            <summary>¿Dan vasos en los puestos?</summary>
+            <p>Los vasos son para recargar o tomar en el lugar y no son descartables. Conviene llevar vaso plegable o flask propio.</p>
+          </details>
+          <details>
+            <summary>¿Pueden correr los chicos?</summary>
+            <p>Sí, en UKT Kids, la carrera para chicos que se hace en el balneario el mismo fin de semana.</p>
+          </details>
+          <details>
+            <summary>¿Dónde encuentro mis fotos?</summary>
+            <p>Las fotos de los cuatro fotógrafos oficiales están en una carpeta pública de Drive, ordenadas por fotógrafo y por sector. El enlace está más abajo, en la sección de fotos.</p>
+          </details>
+          <details>
+            <summary>¿Dónde me alojo?</summary>
+            <p>San Esteban, Los Cocos, La Cumbre y Capilla del Monte están a pocos minutos del balneario. Para orientarte, podés consultar a Turismo Los Cocos o a la Municipalidad de San Esteban, que acompañan la carrera.</p>
+          </details>
+          <details>
+            <summary>¿Cómo consulto algo que no está acá?</summary>
+            <p>Por WhatsApp al 3548 615359 o por mensaje directo en Instagram, @ultra_kamiare.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="seccion">
+      <div class="envoltura">
+        <div class="cabeza-doble">
+          <div>
+            <p class="rotulo">Fotos de la 1ª edición</p>
+            <h2 class="titulo-seccion titulo-gastado">Lo que se vivió</h2>
+          </div>
+          <a class="btn btn--linea" href="https://drive.google.com/drive/folders/1dfsqM-6CXaBWwMXS6JPrlNGHEFXjakbs" target="_blank" rel="noopener">Buscá tu foto en el Drive</a>
+        </div>
+        <div class="galeria">
+          <button class="galeria__item galeria__item--grande" data-src="img/largada.jpg" data-autor="Sportraits"><img src="img/largada-sm.jpg" alt="Largada bajo el arco de Ultra Kâmiâre" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/corredora-sonrisa.jpg" data-autor="Kiehr Fotodeportiva"><img src="img/corredora-sonrisa-sm.jpg" alt="Corredora sonriendo en la subida" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/medallas.jpg" data-autor="Kiehr Fotodeportiva"><img src="img/medallas-sm.jpg" alt="Medallas finisher con el símbolo de la carrera" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/abrazo-llegada.jpg" data-autor="Sportraits"><img src="img/abrazo-llegada-sm.jpg" alt="Dos corredoras abrazadas en la llegada" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/ladera.jpg" data-autor="Inés Zamora"><img src="img/ladera-sm.jpg" alt="Corredor bajando una ladera con nubes" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/podio.jpg" data-autor="Kiehr Fotodeportiva"><img src="img/podio-sm.jpg" alt="Podio del 50K" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/tren.jpg" data-autor="Inés Zamora"><img src="img/tren-sm.jpg" alt="Corredores con bolsas del kit frente al tren en la estación de San Esteban" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/feria-buffet.jpg" data-autor="Kiehr Fotodeportiva"><img src="img/feria-buffet-sm.jpg" alt="Buffet de la feria en el balneario" loading="lazy"></button>
+          <button class="galeria__item" data-src="img/finisher.jpg" data-autor="Sportraits"><img src="img/finisher-sm.jpg" alt="Corredor con la medalla después de llegar" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO (en Corredo: "meet the team") -->
+    <section class="seccion seccion--hueso">
+      <div class="envoltura">
+        <p class="rotulo">Quiénes la hacen</p>
+        <h2 class="titulo-seccion titulo-gastado">El equipo</h2>
+        <div class="equipo">
+          <div class="equipo__grupo">
+            <h3>Dirección de carrera</h3>
+            <p><a href="https://www.instagram.com/fabio_cuimi/" target="_blank" rel="noopener">Fabio Cuimi</a>, que relevó los circuitos antes de la primera edición.</p>
+            <h3 class="h4-espacio">Redes y entrevistas</h3>
+            <p><a href="https://www.instagram.com/georgeblanco/" target="_blank" rel="noopener">George Blanco</a></p>
+          </div>
+          <div class="equipo__grupo">
+            <h3>Fotografía</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/ine.zamoph/" target="_blank" rel="noopener">Inés Zamora</a></li>
+              <li><a href="https://www.instagram.com/nicolas.bie.9/" target="_blank" rel="noopener">Nicolás Bie</a></li>
+              <li><a href="https://www.instagram.com/kiehr.fotodeportiva/" target="_blank" rel="noopener">Johnatan Kiehr</a></li>
+              <li><a href="https://www.instagram.com/sportraits.ph/" target="_blank" rel="noopener">Estefanía Burgos</a></li>
+            </ul>
+          </div>
+          <div class="equipo__grupo">
+            <h3>Video</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/cristianpalacio.ph/" target="_blank" rel="noopener">Cristian Palacio</a></li>
+              <li><a href="https://www.instagram.com/mario_j_tizon/" target="_blank" rel="noopener">Mario Tizón</a></li>
+              <li><a href="https://www.instagram.com/abel.macchi/" target="_blank" rel="noopener">Abel Macchi</a></li>
+              <li><a href="https://www.instagram.com/vision.running/" target="_blank" rel="noopener">Santiago y Sol Pacheco</a>, cámara en carrera</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORS (franja oscura) -->
+    <section class="sponsors" aria-label="Acompañan">
+      <div class="envoltura">
+        <p class="rotulo rotulo--claro">Nos acompañaron en 2026</p>
+        <ul class="sponsors__lista">
+          <li><a href="https://www.instagram.com/salpasports/" target="_blank" rel="noopener">Salpa Sports</a></li>
+          <li><a href="https://www.instagram.com/mervicklab/" target="_blank" rel="noopener">Mervick Lab</a></li>
+          <li><a href="https://www.instagram.com/playaditooficial/" target="_blank" rel="noopener">Playadito</a></li>
+          <li><a href="https://www.instagram.com/poweradear/" target="_blank" rel="noopener">Powerade</a></li>
+          <li><a href="https://www.instagram.com/activate.tiendasaludable/" target="_blank" rel="noopener">Activate</a></li>
+          <li><a href="https://www.instagram.com/redvigfarma_/" target="_blank" rel="noopener">Redvig Farma</a></li>
+        </ul>
+        <p class="sponsors__apoyo">Con el apoyo de la <a href="https://www.instagram.com/sanesteban.punilla/" target="_blank" rel="noopener">Municipalidad de San Esteban</a> y <a href="https://www.instagram.com/turismoloscocos/" target="_blank" rel="noopener">Turismo Los Cocos</a>.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="llamado">
+      <div class="envoltura llamado__fila">
+        <p class="llamado__txt">¿Te quedó alguna duda? Escribinos y te respondemos.</p>
+        <a class="btn btn--azul" href="https://wa.me/5493548615359" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="envoltura pie__grilla">
+      <div class="pie__marca">
+        <img src="img/logo-blanco.png" alt="Ultra Kâmiâre Trail" width="200" height="70" loading="lazy">
+        <p>Sé parte de la tribu.</p>
+      </div>
+      <div>
+        <h3>La carrera</h3>
+        <ul>
+          <li><a href="#distancias">Distancias</a></li>
+          <li><a href="#reglamento">Requisitos y kit</a></li>
+          <li><a href="#resultados">Resultados 2026</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#lugar">Cómo llegar</a></li>
+          <li><a href="#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="https://drive.google.com/drive/folders/1dfsqM-6CXaBWwMXS6JPrlNGHEFXjakbs" target="_blank" rel="noopener">Fotos oficiales</a></li>
+          <li><a href="https://cronometrajeinstantaneo.com/resultados/ultra-kamiare-trail/" target="_blank" rel="noopener">Cronometraje</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="https://wa.me/5493548615359" target="_blank" rel="noopener">WhatsApp 3548 615359</a></li>
+          <li><a href="https://www.instagram.com/ultra_kamiare/" target="_blank" rel="noopener">Instagram @ultra_kamiare</a></li>
+          <li>Balneario San Esteban, Punilla, Córdoba</li>
+        </ul>
+      </div>
+    </div>
+    <div class="envoltura pie__base">
+      <p>Ultra Kâmiâre Trail · Origen en movimiento</p>
+      <p>Fotos: Inés Zamora, Johnatan Kiehr y Sportraits</p>
+    </div>
+  </footer>
+
+  <dialog class="visor" aria-label="Foto ampliada">
+    <img src="" alt="">
+    <p class="visor__autor"></p>
+    <button class="visor__cerrar" type="button">Cerrar</button>
+  </dialog>
+
+  <script src="js/sitio.js"></script>
+</body>
+</html>
